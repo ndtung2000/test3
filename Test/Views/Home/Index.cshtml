@@ -1,0 +1,21 @@
+﻿    @model IEnumerable<Test.Models.DSTaiLieu>   
+    @{
+        ViewBag.Title = "Home Page";
+    }
+    <div class="row">
+
+    @foreach (var item in Model)
+    {
+        <div class="col-lg-3">
+            <div class="card">
+                <img src="@item.Img" style="height:350px" class="card-img-top" alt="Img">
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p class="card-text">@item.Name</p>
+                    <a href="/Home/Detail?Id=@item.Id" class="btn btn-primary">Xem chi tiết</a>
+                </div>
+            </div>
+        </div>
+     }
+            
+    </div>

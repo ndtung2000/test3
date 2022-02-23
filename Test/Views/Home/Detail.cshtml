@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = Model.Name;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+
+<div class="container">
+    <div class="card">
+        <div class="container-fliud">
+            <div class="wrapper row">
+                <div class="preview col-md-6">
+
+                    <div class="preview-pic tab-content" style="margin:10px 10px 10px 10px">
+                        <div class="tab-pane active" id="pic-1">
+                            <img src=@Model.Img style="width:400px; height:600px;"/>
+                        </div>
+                        <div class="tab-pane" id="pic-2"><img src="http://placekitten.com/400/252" /></div>
+                        <div class="tab-pane" id="pic-3"><img src="http://placekitten.com/400/252" /></div>
+                        <div class="tab-pane" id="pic-4"><img src="http://placekitten.com/400/252" /></div>
+                        <div class="tab-pane" id="pic-5"><img src="http://placekitten.com/400/252" /></div>
+                    </div>
+                    
+
+                </div>
+                <div class="details col-md-6">
+                    <h2 class="product-title">@Model.Name</h2>
+                    <div class="rating">
+                        <div class="stars">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <span class="review-no">
+                            <span style="font-weight:bold; font-size:15px">Nhà xuất bản:</span> @Model.Author
+                        </span>
+                        <p></p>
+                        <span class="review-no">
+                            <span style="font-weight:bold; font-size:15px">Số trang:</span> @Model.PageNumber
+                        </span>
+                    </div>
+                    <p></p>
+                    <p class="product-description">
+                        <span style="font-weight:bold; font-size:15px">Mô tả:</span> @Model.Detail
+                    </p>
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
